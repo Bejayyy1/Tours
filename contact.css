@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    
+}
+
+.map-background{
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    z-index: -1;
+}
+.map-background img{
+    width: 100%;
+    height: 100%;
+}
+nav{
+    position: absolute;
+    display: flex;
+    z-index: 999;
+    width: 100%;
+    padding: 20px 0 0 0;
+    height: 25vh;
+    }
+nav .logo{
+    position: absolute;
+    top: -3vh;
+    height: 110%;
+    left: 12vw;
+    padding: 30px 10px 15px 10px;
+    background-color: #FCFDF8;
+    border: 3px solid #04284D;
+    border-radius: 0 0 100% 100%;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+nav ul{
+    display: flex;
+    position: absolute;
+    right: 5vw;
+    gap: 2vw;
+    top: 0;
+    height: 20%;
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+nav ul li {
+    list-style: none;
+    height: 100%;
+    display: flex; /* Align items vertically in the li */
+    align-items: center; /* Center items vertically */
+    justify-content: center;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    align-items: center; /* Center items vertically */
+    font-family: "Bigshot One", serif;
+    font-size: 1.2rem;
+
+}
+.home{
+    background-color: #04284D;
+    width: 13vw;
+    height: 100%;
+    text-align: center;
+    padding: 20px 0 10px 0;
+    border-radius: 0 0 30px 30px;
+}
+.contact{
+    background-color: #ffffff;
+    width: 13vw;
+    height: 100%;
+    text-align: center;
+    padding: 20px 0 10px 0;
+    border-radius: 0 0 30px 30px;
+
+}
+.contact a{
+    color: #04284D;
+
+}
+.contact a:hover,
+.home a:hover{
+    color: #FEAD5F;
+
+}
+.header{
+    position: absolute;
+    color: #fff;
+    font-family: "Bebas Neue", sans-serif;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 30%;
+    font-size: 4rem;
+    letter-spacing: 2vw;
+    z-index: 999;
+}
+.container{
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translateX(-50%);
+    display: flex;
+    width: 75%;
+    height: 90vh;
+    flex-direction: row;
+    z-index: 999;
+}
+.container .details{
+    background-color: #02101B;
+    color: white;
+    width: 35%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+}
+.details p {
+    margin: 0; /* Remove default margin */
+    padding: 20px 0;
+    text-align: left; /* Ensure text is left-aligned */
+    width: 100%; /* Ensure p elements take full width */
+}
+.phone p{
+    text-align: start;
+}
+.container .map{
+    position: absolute;
+    right: 0;
+    width: 65%;
+    height: 100%;
+    position: absolute;
+
+}
+.details .header1{
+    align-items: center; /* Center items horizontally */
+    margin-top: -60vh;
+    position: absolute;
+    text-align: center;
+}
+.header1 h1{
+    font-family: "Rubik Mono One", monospace;
+    font-size: .9rem;
+}
+.map iframe{
+    width: 100%;
+    height: 100%;
+    border: 0; /* Remove border */
+    
+}
+.details-container{
+    width: 80%;
+    font-family: "Tienne", serif;
+}
+.phone i, 
+.envelope i,
+.location i,
+.whatsapp i{
+    margin-right: .4vw;
+    font-size: 1.2rem;
+}
+.whatsapp i{
+    font-size: 1.5rem;
+}
+.location span{
+    margin-left: 1.89vw;
+}
+.bg-image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.bg-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.bottom-part{
+    position: absolute;
+    width: 100%;
+    height: 150vh;
+    margin-top: 90vh;
+}
+.logo{
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+   margin-top: 2vh;
+}
+.lines{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.line1, .line2{
+    background-color: black;
+    height: .3vh;
+    width: 80vw;
+    justify-self: center;
+}
+.line1{
+    margin-top: 64vh;
+}
+.line2{
+        margin-top: 8vh;
+}
+footer{
+    position: absolute;
+    height: 80vh;
+    width: 100%;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5); /* White background with 50% opacity */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto; /* Push footer to the bottom */
+}
+.heading-text{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 37%;
+}
+.heading-text h1{
+    font-family: "Oregano";
+    font-size: 3rem;
+}
+.contact-details{
+    position: absolute;
+    top:50%;
+    flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    z-index: 999;
+    gap: 10vw;
+}
+.first{
+    height: 100%;
+    flex-direction: column;
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+}
+.first p, .first a {
+    padding: 15px 0;
+    font-weight: 600;
+    font-size: 1rem;
+    color: black;
+    font-family: "Orelega One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.second{
+    height: 100%;
+    flex-direction: column;
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+}
+.second p {
+    padding: 10px 0;
+    font-weight: 600;
+    font-size: 1rem;
+    font-family: "Orelega One", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+.third{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center items vertically */
+    align-items: start; /* Center items horizontally */
+    right: 0;
+}
+.third p {
+    padding: 15px 0;
+    font-weight: 600;
+    font-size: 1.1rem;
+    font-family: "Orelega One", serif;
+    font-weight: 500;
+    font-style: normal;
+
+}
+.third p i,.second p i, .first p i {
+    font-size: 2vw;
+    margin-right: .4vw;
+}
+.copyright{
+    font-family: "Gurajada", sans-serif;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%)
+}
+.copyright span{
+    font-size: 1.5rem;
+}
